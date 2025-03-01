@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --fuente-montserrat:font-family: "Montserrat", serif;
     --fuente-krona:  font-family: "Krona One", serif;
     --fuente-roboto: font-family: "Roboto", sans-serif;
+    --fuente-openS: font-family: "Open Sans", sans-serif;
+
 }
 
 .body{
@@ -103,3 +104,47 @@
         transition-duration: 1s;
         background-color: white;
     }
+
+    .heroContainer {
+        background: url("../assets/hero2.jpg") center center / cover no-repeat;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+    }
+
+.heroContainer::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    }
+
+.heroInfo{
+    padding: 15% 5%;
+    position: relative;
+    width: 50vw;
+    text-shadow: 3px 3px 0px #222, 3.2px 3.2px 0px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.heroTitulo{
+    color: white;
+    font-family: var(--fuente-openS);
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.heroSubtitulo{
+
+    color: white;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+}
