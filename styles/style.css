@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-
     --fuente-montserrat:font-family: "Montserrat", serif;
     --fuente-krona:  font-family: "Krona One", serif;
     --fuente-roboto: font-family: "Roboto", sans-serif;
 }
 
 .body{
-
     box-sizing: border-box;
 }
 
 .header{
-  background-color: #E0E0E2;
+  background-color: white;
 }
 
 .menu{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
 }
 
 .logo{
@@ -32,7 +30,6 @@
     display: flex;
     gap: 1rem;
     padding: 0 0 0 15%;
-
 }
 
 .listaServicios{
@@ -43,6 +40,8 @@
     font-family: var(--fuente-roboto);
     font-weight: 600;
     font-size: 1.2rem;
+    display: flex; 
+    align-items: center; 
     text-decoration: none;
     color: #2B4162;
 }
@@ -50,32 +49,57 @@
 .menuLink:hover{
     color: #BBA030;
     transition-duration: 1s;
-    
+}
+
+.listaServicios{
+    display: flex; 
+    align-items: center; 
 }
 
 .listaServicios > a.menuLink::after {
     content: " ▼";
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-left: 0.3rem;
   }
+  
 
 .menuLinkServiciosDropdown{
     display: none;
     position: absolute;
-    background: #fff;
+    background: white;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 15px 15px 15px;
     top: 100%;   
     left: 0;
-    font-family: var(--fuente-roboto);
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #2B4162;
+    width: 200px;
 
 }
 
 .listaServicios:hover .menuLinkServiciosDropdown {
     display: block;
   }
+
+  .menuLinkServiciosDropdown > li{
+   border-bottom: solid grey;
+   height: auto;
+   padding: 0;
+  }
+
+
+.listaServiciosMenu{
+      display: flex;
+      align-items: stretch;
+      text-decoration: none;
+      color: #2B4162;
+      font-family: var(--fuente-roboto);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 10px 10px 10px 0;
+    }
+
+
+.listaServiciosMenu:hover{
+        color: #BBA030;
+        transition-duration: 1s;
+        background-color: white;
+    }
