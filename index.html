@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestoría Automotriz Santos</title>
+    <link rel="icon" href="assets/logo-removebg-preview.png" type="image/x-icon#">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
 <body>
+
+  <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>	</a>
+
     <header class="header">
         <nav class="menu">
-            <a href=""><img class="logo"  src="assets/logo.JPG" alt="logo gestoría"></a>
+            <a href=""><img class="logo"  src="assets/logo-removebg-preview.png" alt="logo gestoría"></a>
                 <div class="menuNavegacion">
                     <a class="menuLink" href="">Inicio</a>
                     <a class="menuLink" href="">Nosotros</a>
@@ -31,10 +37,77 @@
     <main>
         <div class="heroContainer">
             <div class="heroInfo">
-                <h1 class="heroTitulo">SANTOS GESTORÍA</h1>
-                <h2 class="heroSubtitulo">Tramites vehiculares</h2>
+                <div class="heroTituloSubtitulo">
+                    <h1 class="heroTitulo">SANTOS GESTORÍA</h1>
+                    <h2 class="heroSubtitulo">Tramites vehiculares</h2>
+                </div>
+                <div class="heroLista">
+                    <ul class="listaContacto">
+                        <li class="elementoLista" id="elementoListaContacto">Contacto</li>
+                        <li class="elementoLista">Celular: (33) 2385 4026</li>
+                        <li class="elementoLista">WhatsApp: (33) 2385 4026</li>
+                        <li class="elementoLista">Email: gestoriasantos@gmail.com</li>
+                        <li class="elementoLista">Horario: L-V 10:00 - 14:00 / 16:00 17:00</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+
+            <div>
+                <svg
+                  class="waves"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 24 150 28"
+                  preserveAspectRatio="none"
+                  shape-rendering="auto"
+                >
+                  <defs>
+                    <path
+                      id="gentle-wave"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                    />
+                  </defs>
+                  <g class="parallax">
+                    <use
+                      xlink:href="#gentle-wave"
+                      x="48"
+                      y="0"
+                      fill="rgba(255,255,255,0.7"
+                    />
+                    <use
+                      xlink:href="#gentle-wave"
+                      x="48"
+                      y="3"
+                      fill="rgba(255,255,255,0.5)"
+                    />
+                    <use
+                      xlink:href="#gentle-wave"
+                      x="48"
+                      y="5"
+                      fill="rgba(255,255,255,0.3)"
+                    />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                  </g>
+                </svg>
+              </div>
+
+              <section class="infoDescuento">
+                  <div class="contenidoInfoDescuento">  
+                    <div class="gifBoton">
+                      <img src="assets/gifprueba-unscreen.gif" class="gifPrueba">
+                      <a><button class="botonWhats">
+                        <img src="assets/whatsAppIcono.png" alt="WhatsApp" class="iconWhats">
+                        <span>Escríbenos por chat</span>
+                      </button></a>
+                    </div>
+                    <div class="textoDescuento">
+                      <h2 class="tituloDescuento">Descuentos en Infracciones Estatales</h2>
+                      <p class="infoTextoDescuento">No pagues de más en tus infracciones estatales. <strong class="enhancedYellow"> Con nuestros descuentos,</strong> el trámite es rápido y sencillo. 
+                      <p class="infoTextoDescuento" id="centrarTextoDescuento"><strong>¡Contáctanos y ahorra hoy!</strong></p>
+                    </div>
+                  </div>
+              </section>
+            
     </main>
     <footer></footer>
     <script src="app.js" defer></script>
