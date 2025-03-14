@@ -9,6 +9,8 @@
 
 .body{
     box-sizing: border-box;
+    background-color: aliceblue;
+
 }
 
 .btn-wsp{
@@ -57,6 +59,10 @@
     align-items: stretch;
 }
 
+.header.shrink .menu{
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+
 
 
 .logo{
@@ -80,6 +86,7 @@
 
 .header.shrink.menuNavegacion {
 padding: auto;
+
 }
 
 .listaServicios{
@@ -466,7 +473,7 @@ strong{
 .sobreEmpresaLp{
   width: auto;
   height: 80vh;
-  background-color: white;
+  background-color: aliceblue;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -502,7 +509,7 @@ margin-bottom: 30px;
 }
 
 .quote-divider {
-  border-left: 4px solid rgb(11,113,195); 
+  border-left: 4px solid #0b71c3; 
   padding-left: 10px; 
   margin-left: 20px; 
 }
@@ -543,10 +550,50 @@ margin-bottom: 30px;
   content: ">";
   display: inline-block;
   margin-left: 8px;
-  opacity: 0; /* Invisible por defecto */
+  opacity: 0; 
   transition: opacity 0.3s ease;
 }
 
 .botonLeerMas:hover::after {
-  opacity: 1; /* Se vuelve visible al pasar el mouse */
+  opacity: 1; 
+}
+
+.divisorSecciones{
+display: flex;
+justify-content: center;
+height: 35vh;
+background-color: aliceblue;
+}
+
+.separador{
+  position: absolute;
+  z-index: 0;
+}
+
+#tituloServicios{
+  margin-top: 3em;
+  z-index: 1;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+.serviciosContenedor{
+  height: auto;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.serviciosLista{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 200px;
+}
+
+.servicios{
+  color: #BBA030;
+  border: 2px solid black;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
 }
