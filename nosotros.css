@@ -1,0 +1,123 @@
+
+.body{
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.nosotrosBoxUno{
+    height: 60vh;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.nosotrosContenido{
+    width: 30vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobreNosotrosTitulo{
+    font-family: "Roboto Slab", serif;
+    color: rgb(128, 128, 128, .6);
+    font-size: .9rem;
+    text-shadow: 1.2px 1.2px 0px rgba(75, 75, 75, 0.6);
+    letter-spacing: 3px
+}
+
+.sobreNosotrosSubtitulo{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: rgba(34, 40, 63, 0.781);
+}
+
+.sobreNosotrosDescripcion{
+    padding-top: 25px;
+    padding-left: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+.sobreNosotrosImagenUno{
+    border-radius: 8%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+
+.nosotrosBoxDos{
+    height: auto;
+    background-color: rgb(250, 250, 250);
+}
+
+.listaMisionVisionValores{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6%;
+    gap: 20px;
+}
+
+.listaMisionVisionValoresElemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3%;
+    gap: 20px;
+}
+
+.listaMVVImagen{
+    height: 100px;
+    width: 100px;
+}
+
+.ListaMVVTitulo{
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    color: rgba(34, 40, 63, 0.781);
+}
+
+.ListaMVVTexto{
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 300px;
+    line-height: 1.25rem;
+}
+
+.listaValores{
+    list-style: circle inside;
+}
+
+.listaValoresElemento{
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 5px;
+    
+}
+
+
+.nosotrosBoxTres{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+#botonContactanos{
+    border-radius: 5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius:20%;
+    text-align: center;
+}
