@@ -10,8 +10,7 @@
 
 .body{
     box-sizing: border-box;
-    background-color: aliceblue;
-
+    background-color: rgb(250, 250, 250);
 }
 
 .btn-wsp{
@@ -483,7 +482,7 @@ strong{
 .sobreEmpresaLp{
   width: auto;
   height: 80vh;
-  background-color: aliceblue;
+  background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -572,7 +571,7 @@ margin-bottom: 30px;
 display: flex;
 justify-content: center;
 height: 35vh;
-background-color: aliceblue;
+background-color: rgb(250, 250, 250);
 }
 
 .separador{
@@ -590,7 +589,7 @@ background-color: aliceblue;
 .serviciosContenedor{
   height: auto;
   width: 100%;
-  background-color: #f0f8ff;
+  background-color: rgb(250, 250, 250);
 }
 
 .serviciosLista{
