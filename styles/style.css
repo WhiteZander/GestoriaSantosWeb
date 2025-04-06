@@ -8,9 +8,10 @@
 
 }
 
-.body{
+body{
     box-sizing: border-box;
     background-color: rgb(250, 250, 250);
+    height: 100%;
 }
 
 .btn-wsp{
@@ -101,7 +102,7 @@ padding: auto;
     align-items: center; 
     text-decoration: none;
     color: #444444;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
 .menuLink:hover{
@@ -110,8 +111,7 @@ padding: auto;
 }
 
 .header.shrink .menuLink {
-  transform: scale(.8);
-  transition-duration: .5s;
+  transition-duration: .3s;
 }
 
 .listaServicios{

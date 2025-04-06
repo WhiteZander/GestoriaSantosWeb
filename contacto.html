@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestoría Automotriz Santos</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon#">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+<body>
+
+  <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>	</a>
+
+    <header class="header">
+        <nav class="menu">
+            <a href="index.html"><img class="logo"  src="assets/logo.png" alt="logo gestoría"></a>
+                <div class="menuNavegacion">
+                    <a class="menuLink" href="index.html">Inicio</a>
+                    <a class="menuLink" href="nosotros.html">Nosotros</a>
+                    <div class=listaServicios>
+                        <a class="menuLink" href="servicios.html">Servicios</a>
+                        <ul class="menuLinkServiciosDropdown">
+                            <li><a href="" class="listaServiciosMenu">Cambio de propietario</a></li>
+                            <li><a href="" class="listaServiciosMenu">Dotación de placas</a></li>
+                            <li><a href="" class="listaServiciosMenu">Validaciones</a></li>
+                            <li><a href="" class="listaServiciosMenu">Bajas totales</a></li>
+                            <li><a href="" class="listaServiciosMenu">Descuentos en infracciones</a></li>
+                        </ul>
+                </div>
+                <a class="menuLink" href="contacto.html">Contacto</a>
+            </div>
+            </nav>
+    </header>
+
+    <div class="header-spacer"></div>
+    <main> 
+        <div class="contactoBoxUno">
+            <div class="contactoInformacion">
+                <div class="contactoInformacionTexto">
+                    <h1 class="contactoInformacionTitulo">CONTACTO</h1>
+                    <h2 class="contactoInformacionDescripcion">¿Tienes alguna duda? ¡Contáctanos!</h2>
+                    <div class="contactoInformacionEmpresa">
+                        <ul class="listaInformacionEmpresa">
+                            <li class="informacionElemento"> <span class="listaSeparador"></span> <img src="assets/mapContacto.png" class="iconoLista"> <span class="textoLista">C. San Isidro #382A, Col. El Paraíso, C.P. 45157, Zapopan, Jal.</span></li>
+                            <li class="informacionElemento"><span class="listaSeparador"></span> <img src="assets/phoneContacto.png" class="iconoLista"> <span class="textoLista">(+52) 33 51 19 57 60</span></li>
+                            <li class="informacionElemento"> <span class="listaSeparador"></span><img src="assets/emailContacto.png" class="iconoLista"> <span class="textoLista">email@email.com</span></li>
+                            <li class="informacionElemento"> <span class="listaSeparador"></span><img src="assets/calendarContacto.png" class="iconoLista"> <span class="textoLista">
+                                Lunes a Viernes: <br>
+                                10:00 - 14:00 <br>
+                                16:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contactoFormularioContainer">
+                <div class="contactoFormulario">
+                    <form>
+                            <label for="nombreapellido">Nombre</label>
+                            <input type="text" id="nombreapellido" class="input-padron" required>
+            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+            
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" id="whatsapp" class="input-padron" pattern="[0-9]{10,12}" required placeholder="(XX) XXXX XXXX">
+            
+                            <label for="mensaje">Mensaje</label>
+                            <textarea cols="16" rows="3" id="mensaje" class="input-padron" required></textarea>
+
+                            <input type="submit" value="Enviar formulario" class="enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactoBoxDos">
+
+            <h2 class="textoSiguenos">¡Contáctanos por nuestras redes! </h2>    
+
+            <div class="iconosRedes">
+
+                <img src="assets/facebookContacto.png" class="iconoRedesContacto" alt="Icono Facebook" href="">
+                <img src="assets/instagramContacto.png" class="iconoRedesContacto" alt="Icono Instagram" href="">
+                <img src="assets/tiktokContacto.png" class="iconoRedesContacto" alt="Icono TikTok" href="">
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenidoFooter">
+
+          <div class="informacionFooter">
+            <img class="logoFooter" src="assets/logo.png">
+            <section class="informacionContenido">
+
+              <div class="descripcionFooter">
+                <span class="categoriaFooter"> <img src="assets/pinDrop.svg" class="iconoFooter"> <p class="textoFooter">Ubicación</p></span>
+                <p class="textoDescripcionFooter">
+                  C. San Isidro #382A<br>
+                  Col. El Paraíso<br>  
+                  Zapopan, Jal. <br>
+                  C.P. 45157 <br>
+                </p>
+              </div>
+
+              <div class="descripcionFooter">
+                
+                <span class="categoriaFooter">  <img src="assets/phone.svg" class="iconoFooter"><p class="textoFooter">Teléfono</p></span>
+                <p class="textoDescripcionFooter">
+                  (+52) 33 51 19 57 60
+                </p>
+              </div>
+
+              <div class="descripcionFooter">
+                <span class="categoriaFooter">  <img src="assets/calendarClock.svg" class="iconoFooter"><p class="textoFooter">Horario </p></span>
+
+                <p class="textoDescripcionFooter">
+                  Lunes a Viernes: <br>
+                  10:00 - 14:00 <br>
+                  16:00 - 19:00
+                </p>
+              </div>
+
+              </section>
+
+            <div class="redes">
+                <h2 class="textoRedes">Síguenos en:</h2>
+
+                <div>
+                  <img src="assets/facebookIcon.svg" class="rssIcon" alt="Facebook logo">
+                  <img src="assets/instagramIcon.svg" class="rssIcon" alt="Instagram logo">
+                </div>
+            </div>
+          </div>
+          <iframe class="ubicacionMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.596121229228!2d-103.3797142!3d20.7266189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af3b07af556f%3A0x283e5acf37ac9722!2sSantos%20Gestoria%20Automotriz!5e0!3m2!1ses!2smx!4v1743642046136!5m2!1ses!2smx" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="copyrightField">
+          <p class="textoCopyright"> <strong>Copyright</strong> © 2025 Santos Gestoría | Aviso de Privacidad | Usted está sujeto a la Política de Privacidad y los Términos del Servicio de Google.</p>
+        </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

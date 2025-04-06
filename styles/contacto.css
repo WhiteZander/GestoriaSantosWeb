@@ -1,0 +1,186 @@
+main{
+    height: 100%;
+    width: auto;
+}
+
+
+.contactoBoxUno{
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 0 3% 0;
+}
+
+.contactoInformacionTitulo{
+    font-family: "Roboto Slab", serif;
+    color: rgb(128, 128, 128, .6);
+    font-size: .9rem;
+    text-shadow: 1.2px 1.2px 0px rgba(75, 75, 75, 0.6);
+    letter-spacing: 3px
+}
+
+.contactoInformacionDescripcion{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: rgba(34, 40, 63, 0.781);
+}
+
+form{
+    height: 55vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    margin-right: 100px;
+    margin-top: 60px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 1.1px
+
+}
+
+input{
+    padding-left: 10px;
+}
+
+.input-padron{
+    height: 35px;
+    font-family: "Montserrat", sans-serif;    
+    font-size: .8rem;
+    
+}
+
+
+.input-padron, .enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 230, 230);
+    border-radius: 10px;
+    border-style: none;
+    width: 210px;
+}
+
+input::placeholder,textarea::placeholder{
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+#mensaje{
+    margin-bottom: 30px;
+    padding-left: 10px;
+    height: 60px;
+    padding-top: 10px;
+
+}
+
+.enviar{
+    width: 11vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: .9rem;
+    font-weight: 200;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.enviar:hover{
+background-color: rgb(106, 203, 255);
+transition-duration: 1s;
+}
+
+
+.contactoInformacionEmpresa{
+    padding:45px 150px 30px 0px;
+}
+
+.listaInformacionEmpresa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 50px;
+    padding-top:30px ;
+}
+
+.informacionElemento{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.listaSeparador{
+    width: 5px;
+    height: 30px;
+    background-color: rgba(78, 91, 143, 0.781);
+    margin-right: 20px;
+}
+
+.iconoLista{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.textoLista{
+    width: 180px;
+    height: auto;
+    font-family: "Montserrat", sans-serif;    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    text-align: justify;
+    
+}
+
+.contactoBoxDos{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 40px 0;
+
+}
+
+.textoSiguenos{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: rgba(34, 40, 63, 0.781);
+}
+
+
+.iconoRedesContacto{
+    height: 100px;
+    width: 100px;
+    padding: 40px 30px;
+}
+
+.iconoRedesContacto:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
