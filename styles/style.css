@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --fuente-montserrat:font-family: "Montserrat", serif;
     --fuente-krona:  font-family: "Krona One", serif;
@@ -7,6 +7,8 @@
     --fuente-openS: font-family: "Open Sans", sans-serif;
 
 }
+
+
 
 body{
     box-sizing: border-box;
@@ -40,6 +42,10 @@ body{
       height:63px;
       line-height: 66px;
 }
+}
+
+main{
+  background-color: rgb(250, 250, 250);
 }
 
 .header{
@@ -95,9 +101,9 @@ padding: auto;
 }
 
 .menuLink{
-    font-family: var(--fuente-roboto);
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex; 
     align-items: center; 
     text-decoration: none;
@@ -106,8 +112,8 @@ padding: auto;
 }
 
 .menuLink:hover{
-    color: #BBA030;
-    transition-duration: .7s;
+    color: #4c89b9;
+    transition-duration: .5s;
 }
 
 .header.shrink .menuLink {
@@ -120,12 +126,13 @@ padding: auto;
 }
 
 .listaServicios:hover .menuLink{
-    color: #BBA030;
-    transition-duration: 1s;
+    color: #4c89b9;
+    transition-duration: .5s;
 }
 
 .listaServicios > a.menuLink::after {
     content: " ▼";
+    padding-top: .25rem;
     font-size: 0.6rem;
     margin-left: 0.3rem;
   }
@@ -141,7 +148,7 @@ padding: auto;
     left: 0;
     width: 200px;
     z-index: 1;
-    border-top: 4px solid #BBA030;
+    border-top: 4px solid #6cbfff;
 }
 
 .listaServicios:hover .menuLinkServiciosDropdown {
@@ -159,9 +166,9 @@ padding: auto;
       display: flex;
       align-items: stretch;
       text-decoration: none;
-      color: #2B4162;
-      font-family: var(--fuente-roboto);
-      font-weight: 600;
+      color: rgba(21, 26, 50, 0.8);
+      font-family: "Roboto", sans-serif;
+      font-weight: 450;
       font-size: 1rem;
       border-bottom: solid grey;
       padding: 10px 10px 10px 0;
@@ -169,8 +176,8 @@ padding: auto;
 
 
 .listaServiciosMenu:hover{
-        color: #BBA030;
-        transition-duration: .7s;
+        color: #4c89b9;;
+        transition-duration: .5s;
         background-color: white;
     }
 
@@ -181,14 +188,19 @@ padding: auto;
 .heroContainer {
         background: url("../assets/hero.jpg") center center / cover no-repeat;
         width: 100%;
-        height: 85vh;
+        height: 100vh;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+        margin-bottom: -10%;
     }
 
 .heroContainer::before{
     content:"";
-    background: rgb(34,76,195);
-    background: linear-gradient(0deg, rgba(34,76,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: rgb(0, 0, 0);
+    /*background: linear-gradient(0deg, rgba(34,76,195,1) 0%, rgba(253,187,45,1) 100%);*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -196,15 +208,8 @@ padding: auto;
     z-index: 0;
     }
 
-.heroInfo{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
- 
-}
-
 .heroTituloSubtitulo{
-    padding: 15% 8% 15% 0;
+  padding-top: 7%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -214,8 +219,9 @@ padding: auto;
 
 .heroTitulo{
     color: white;
-    font-family: var(--fuente-openS);
+    font-family: "Roboto Slab", serif;
     font-size: 4.5rem;
+    letter-spacing: 3px;
     font-weight: 800;
     text-align: center;
     text-shadow: 3px 3px 0px #222, 3px 3px 0px grey;
@@ -226,55 +232,12 @@ padding: auto;
 .heroSubtitulo{
 
     color: white;
-    font-family: var(--fuente-montserrat);
+    font-family: "Montserrat", serif;  
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 500;
     text-shadow: 2px 2px 0px #222, 2px 2px 0px grey;
     
 }
-
-.heroLista{
-    display: flex;
-    align-items: center;
-    padding-top: 25%;
-}
-
-.listaContacto{
-    list-style: none;
-    background: rgba(253,187,45,.6);
-    width: 350px;   
-    border-radius: 5%;
-    border-top: 5px solid rgb(9, 13, 145);
-    margin-bottom: 12%;
-
-
-}
-
-
-.elementoLista{
-    position: relative;
-    color: black;
-    font-family: var(--fuente-krona);
-    font-style: normal;
-    font-size: 1rem;
-    padding: 0 10px 5px 0;
-    line-height: 2rem;
-    text-align: center;
-
-}
-
-
-#elementoListaContacto{
-    text-align: center;
-    color: black;
-    font-family: var(--fuente-krona);
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 3%;
-    padding: 0 7%
-}
-
-
 
 .waves {
     position: relative;
@@ -347,6 +310,7 @@ padding: auto;
 
 
 .infoDescuento{
+    position: relative;
     width: auto;
     height: 60vh;
     background: rgb(11,113,195);
@@ -388,13 +352,21 @@ padding: auto;
   margin-bottom: 20px;
 }
 
+.linkServicios{
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+}
+
 .tituloDescuento{
 font-family: "Open Sans", sans-serif;
 font-weight: 700;
 color: white;
 font-size: 2rem;
 margin-bottom: 30px;
+text-decoration: none;
 }
+
 
 .infoTextoDescuento{
 
@@ -596,16 +568,47 @@ background-color: rgb(250, 250, 250);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 200px;
+  padding: 15px 200px 30px 200px;
 }
 
 .servicios{
-  color: #BBA030;
-  border: 2px solid black;
-  width: 300px;
-  height: 400px;
+  width: 420px;
+  height: 200px;
   margin-bottom: 30px;
+  background-image: url("/assets/servicios.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  border-style: none;
+  background-repeat:no-repeat ;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
+
+.servicios:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+
+.servicios:hover::before{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.33);
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.textoServiciosLista{
+  position: relative;
+  color: rgba(255, 255, 255);
+  padding-bottom: 20px;
+  font-family: "Montserrat", serif;  
+  font-size: .9rem;
+  font-weight: 600;
+}
+
 
 
 .footer{
@@ -700,6 +703,7 @@ margin-bottom: 30px;
 
 padding: 2rem;
 border-radius: 50px;
+
 }
 
 .copyrightField{

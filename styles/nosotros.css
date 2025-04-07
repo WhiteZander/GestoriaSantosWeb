@@ -50,6 +50,8 @@
 .sobreNosotrosImagenUno{
     border-radius: 8%;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    border: 4px solid white;
+
 }
 
 .nosotrosBoxDos{
@@ -68,7 +70,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 3%;
     gap: 20px;
 }
 
