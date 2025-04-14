@@ -243,7 +243,7 @@ padding: auto;
     position: relative;
     width: 100%;
     height: 1vh;
-    margin-bottom: -7px;
+    margin-bottom: -70px;
     /*Fix for safari gap*/
     min-height: 100px;
     max-height: 150px;
