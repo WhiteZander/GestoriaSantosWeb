@@ -6,10 +6,10 @@
 }
 
 .imagenServicios{
-    height: 400px;
-    width: 300px;
+    height: 600px;
+    border: 2px solid white;
     border-radius: 8%;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 
 .informacionServicio{
@@ -54,6 +54,53 @@
     font-weight: 200;
     line-height: 1.4rem;
     text-align: justify;
+}
+
+.listaSeparador{
+    margin-bottom: 1rem;
+}
+
+#requisitoLista{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
+
+}
+
+#requisitoListaForaneos{
+    font-style: italic;
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#lastElement{
+    margin-top: 30px;
+}
+
+
+.descripcionRequisitoLista{
+    font-size: .8em;
+}
+
+.listaSubpuntos{
+    padding-top: 10px;
+    padding-left: 1em;
+}
+
+#listaSubpuntosFlex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#requisitoListaSub{
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: .8em;
+    text-align: left;
 }
 
 

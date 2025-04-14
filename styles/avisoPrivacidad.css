@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+  }
+  
+  .privacy-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+
+}
+  
+  .privacy-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .privacy-section h1,
+  .privacy-section h2 {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: rgba(34, 40, 63, 0.781);
+  }
+  
+  .privacy-section p {
+    padding-top: 25px;
+    padding-left: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4rem;
+    text-align: justify;
+  }
+
+  .privacy-section a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .privacy-main {
+      padding: 1rem;
+    }
+  }
