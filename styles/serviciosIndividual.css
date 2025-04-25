@@ -5,6 +5,10 @@
     padding: 3% 0;
 }
 
+#SeccionInformacionServicioValidaciones{
+    flex-direction: column;
+}
+
 .imagenServicios{
     height: 600px;
     border: 2px solid white;
@@ -12,8 +16,22 @@
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 
+#imagenServiciosCambioProp{
+    height: 800px;
+}
+
+#imagenHorizontalServicios{
+    width: 800px;
+    height: 530px;
+    margin-bottom: 4%;
+}
+
 .informacionServicio{
     width: 30vw;
+}
+
+#informacionServicioValidaciones{
+    width: 70vw;
 }
 
 .separadorServicios{
@@ -56,6 +74,13 @@
     text-align: justify;
 }
 
+.centrarContenido{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .listaSeparador{
     margin-bottom: 1rem;
 }
@@ -65,6 +90,17 @@
     list-style-position: inside;
     text-align: left;
 
+}
+
+#incisoLista{
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+
+}
+
+#incisoLista::marker{
+    color: rgb(61, 128, 152);
 }
 
 #requisitoListaForaneos{

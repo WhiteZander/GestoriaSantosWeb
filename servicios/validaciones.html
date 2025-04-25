@@ -37,37 +37,101 @@
     </header>
     <div class="header-spacer"></div>
     <main>
-      <section class="SeccionInformacionServicio">
-        <img src="../assets/validacionesServicio.jpg" class="imagenServicios">
-        <div class="informacionServicio">
+      <section class="SeccionInformacionServicio" id="SeccionInformacionServicioValidaciones">
+        <img src="../assets/validaciones1.jpg" class="imagenServicios" id="imagenHorizontalServicios">
+        <div class="informacionServicio" id="informacionServicioValidaciones">
           <hr class="separadorServicios">
           <h1 class="tituloInformacionServicio">SERVICIOS</h1>
           <h2 class="subtituloInformacionServicio">Validaciones</h2>
           <ul class="descripcionInformacionServicio"> <li class="listaSeparador">Realizamos validaciones vehiculares para garantizar que tu auto cumpla con las normativas vigentes, con el respaldo de nuestro equipo especializado.</li>
-            <li class="listaSeparador"><strong>Requisitos:</strong></li>
-            <li class="listaSeparador" id="requisitoLista">Original de Identificación Oficial.<br>
-              <ul class="listaSubpuntos"> <li class="listaSeparador" id="requisitoListaSub">En caso de ser extranjero deberá presentar el pasaporte de su país y el FM1 o FM2 o FM3, depende el caso del contribuyente.</li></ul>
+            <div class="centrarContenido">
+              <li class="listaSeparador"><strong>Requisitos:</strong></li>
+              <li class="listaSeparador" id="requisitoLista">Original de Identificación Oficial.<br>
+                <ul class="listaSubpuntos"> <li class="listaSeparador" id="requisitoListaSub">En caso de ser extranjero deberá presentar el pasaporte de su país y el FM1 o FM2 o FM3, depende el caso del contribuyente.</li></ul>
+              </li>
+              <li class="listaSeparador" id="requisitoLista">Original Comprobante de domicilio del estado de Jalisco.
+                <ul class="listaSubpuntos">
+                  <li class="listaSeparador" id="requisitoListaSub">Vigente, no mayor a 3 meses de antigüedad.</li>
+                  <li class="listaSeparador" id="requisitoListaSub">Debe coincidir con todo el nombre completo de la identificación o todo el domicilio completo de la identificación.</li>
+                  <li class="listaSeparador" id="requisitoListaSub">Comprobantes válidos, SIAPA Y CFE. Estado de cuenta bancario o de tienda departamental los cuales deben contar con el código QR.</li>
+                  <li class="listaSeparador" id="requisitoListaSub">Estado de cuenta TELMEX.</li>
+                  <li class="listaSeparador" id="requisitoListaSub">Servicios de telefonía en casa solo son válidas las facturas con código QR, no estados de cuenta simples.</li>
+                  <li class="listaSeparador" id="requisitoListaSub">TELEFONIA MOVIL NO ES VÁLIDA.</li>
+              </ul>
             </li>
-            <li class="listaSeparador" id="requisitoLista">Original Comprobante de domicilio del estado de Jalisco.
-              <ul class="listaSubpuntos">
-                <li class="listaSeparador" id="requisitoListaSub">Vigente, no mayor a 3 meses de antigüedad.</li>
-                <li class="listaSeparador" id="requisitoListaSub">Debe coincidir con todo el nombre completo de la identificación o todo el domicilio completo de la identificación.</li>
-                <li class="listaSeparador" id="requisitoListaSub">Comprobantes válidos, SIAPA Y CFE. Estado de cuenta bancario o de tienda departamental los cuales deben contar con el código QR.</li>
-                <li class="listaSeparador" id="requisitoListaSub">Estado de cuenta TELMEX.</li>
-                <li class="listaSeparador" id="requisitoListaSub">Servicios de telefonía en casa solo son válidas las facturas con código QR, no estados de cuenta simples.</li>
-                <li class="listaSeparador" id="requisitoListaSub">TELEFONIA MOVIL NO ES VÁLIDA.</li>
-            </ul></li>
-            <li class="listaSeparador" id="requisitoLista">Constancia de situación fiscal (SAT) vigente, no mayor a 3 meses.</li>
-            <li class="listaSeparador" id="requisitoLista">Validación Vehículos Nacionales:
-                <ul class="listaSubpuntos"> 
-                    <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa con su última en original o en su defecto Factura de Origen Original</li>
-                    <li class="listaSeparador" id="requisitoListaSub">Formato de Baja Total con su Ticket de Pago ORIGINAL</li>
-                    <li class="listaSeparador" id="requisitoListaSub">Vehículos con bajas totales del 2021 hacia atrás</li></ul></li>
-            <li class="listaSeparador" id="requisitoLista">Validación Vehículos Americanos que entran por primera vez al País:
-                <ul class="listaSubpuntos"> 
-                    <li class="listaSeparador" id="requisitoListaSub">Titulo Original</li>
-                    <li class="listaSeparador" id="requisitoListaSub">Pedimento Original (todas las hojas que contenga su pedimento)</li>
-                    <li class="listaSeparador" id="requisitoListaSub">Factura de Importadora</li></ul></li>
+              <li class="listaSeparador" id="requisitoLista">Constancia de situación fiscal (SAT) vigente, no mayor a 3 meses.</li>
+              <li class="listaSeparador" id="incisoLista">Validación vehículos nacionales:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa con su última en original o en su defecto factura de origen original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Formato de baja total con su ticket de pago ORIGINAL</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Vehículos con bajas totales del 2021 hacia atrás</li></ul>
+                    </li>
+              <li class="listaSeparador" id="incisoLista">Validación vehículos americanos que entran por primera vez al país:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Titulo original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Pedimento original (todas las hojas que contenga su pedimento)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de importadora</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación vehículos nuevos (Que excedieron la fecha de 1 año después de la fecha de facturación y no fueron emplacados):
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa, última en original ó, en su defecto, factura original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">En caso de que esté en financiamiento, anexar carta factura, original y vigente, no mayor a 30 días y la copia de la factura ó las secuencias de las facturas que tenga el vehículo.</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de importadora</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación vehículos de siniestro nacionales:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa, última en original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Formato de baja total con su ticket de pago ORIGINAL</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Carta apta para circular emitida por la aseguradora, firmada y sellada (En caso de tenerlo)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Fotos del siniestro emitida por la aseguradora, firmada y sellada (En caso de tenerlo)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de piezas (En caso de tenerlo)</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación vehículos de siniestro americanos
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Título SALVAGE original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Pedimento Original (todas las hojas que contenga su pedimento)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Formato de baja total con su ticket de pago ORIGINAL</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Carta apta para circular emitida por la aseguradora, firmada y sellada (En caso de tenerlo)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Fotos del siniestro emitida por la aseguradora, firmada y sellada (En caso de tenerlo)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de piezas (En caso de tenerlo)</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación vehículos con extravio de placa que requieran realizar cambio de propietario y dotación de su nueva placa, del estado de Jalisco:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa, ultima en original o en su defecto factura original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Recibo de pago de refrendo del presente año o tarjeta de circulación vigente</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Denuncia ratificada de la placa o placas extraviadas, emitida por la fiscalía del estado de Jalisco</li>
+                        <ul class="listaSubpuntos"> 
+                          <li class="listaSeparador" id="requisitoListaSub">Dirección: Calle 14, Colón Industrial, 44940 Guadalajara, Jal.</li>
+                          <li class="listaSeparador" id="requisitoListaSub">Horarios: De lunes a domingo de 8:00 a 21:00 horas</li></ul></ul>
+                        </li>
+                      <li class="listaSeparador" id="incisoLista">Validación por seguridad vehículos nacionales:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa con su última en original ó, en su defecto, factura de origen original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Formato de baja total con su ticket de pago ORIGINAL ó, en su defecto, el último pago de refrendo del estado proveniente</li></ul>
+                      </li>
+                      <li class="listaSeparador" id="incisoLista">Validación por seguridad vehículos americanos:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Titulo Original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Pedimento Original (todas las hojas que contenga su pedimento)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de Importadora</li>
+                      <li class="listaSeparador" id="requisitoListaSub">En caso de contar con el formato de Baja Total con su ticket de pago ORIGINAL ó, en su defecto, el ultimo pago de refrendo del estado proveniente</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación por cambio de motor vehículos del estado de Jalisco nacionales:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Secuencia de facturas completa con su última en original ó, en su defecto, factura de origen original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Recibo de pago de refrendo del presente año o tarjeta de circulación vigente</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura del nuevo motor timbrada ante el SAT</li></ul>
+                    </li>
+                      <li class="listaSeparador" id="incisoLista">Validación por cambio de motor vehículos del estado de Jalisco americanos:
+                  <ul class="listaSubpuntos"> 
+                      <li class="listaSeparador" id="requisitoListaSub">Titulo Original</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Pedimento Original (todas las hojas que contenga su pedimento)</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura de Importadora</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Recibo de pago de refrendo del presente año o tarjeta de circulación vigente</li>
+                      <li class="listaSeparador" id="requisitoListaSub">Factura del nuevo motor timbrada ante el SAT</li></ul>
+                    </li>
+
+                </div>
           </ul>
         </div>
       </section>
