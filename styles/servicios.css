@@ -1,3 +1,7 @@
+main{
+  box-sizing: border-box;
+}
+
 .serviciosContainer{
     box-sizing: border-box;
     height: auto;
@@ -22,6 +26,11 @@
     letter-spacing: 2px
 }
 
+.serviciosListaCompleta{
+  box-sizing: border-box;
+  padding: 50px 100px;
+}
+
 .serviciosSubtitulo{
     padding-top: 18px;
     font-family: "Krona One", sans-serif;
@@ -32,11 +41,12 @@
 }
 
 .serviciosListaContainer{
+    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 250px 30px 250px;
     gap: 40px;
+    width: 100%;
   }
 
   a{
@@ -102,4 +112,37 @@
 
 
   .btn {  font-family: Arial, Helvetica, sans-serif;  text-transform: uppercase;}  .btn:hover .btn-slide-show-text1 {  margin-left: 65px;}  .btn-shadow-drop {  position: relative;  margin-top: 5%;  background: rgb(249, 250, 250);  padding: 35px 10px 35px 20px;  font-size: 1em;  font-weight: 700;  letter-spacing: 3px;  text-transform: uppercase;  transition: 0.3s ease-in-out;  left: 0px;  top: 0px;  width: 220px;}  .btn-shadow-drop:hover {  left: 4px;  top: 4px;  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;}  .btn-shadow-drop--blue {  border: 1px solid rgb(58, 134, 255);  color: rgb(58, 134, 255);  box-shadow: rgb(58, 134, 255) 4px 4px 0px 0px;}  
+
+  /* Responsive */
+
+  @media (max-width:1050px) {
+
+  }
+
+
+  @media (max-width:768px) {
+
+.serviciosListaContainer{
+  flex-direction: column;
+  align-items: center;
+}
+
+    .serviciosTitulo{
+      padding: 0;
+    }
+
+    .serviciosHead{
+      text-align: center;
+    }
+
+    
+  }
+
+  @media (max-width:500px) {
+
+    .serviciosListaCompleta{
+      padding: 30px;
+    }
+
+  }
 
