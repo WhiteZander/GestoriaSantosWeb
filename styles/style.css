@@ -807,6 +807,7 @@ color: white;
 font-size: 1rem;
 font-weight: 100;
 padding: 2rem 0 2rem 0;
+padding: 0 1%;
 }
 
 .linkCopyright{
@@ -821,14 +822,49 @@ padding: 2rem 0 2rem 0;
 
 @media (max-width:1085px){
 
+
+  .waves{
+    display: none;
+  }
+
+  .contenidoSobreEmpresaLp{
+    padding-right: 5%;
+  }
+
+  .divisorSecciones{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    background-color: #0b71c3;
+    width: 100%;
+  }
+
   #tituloServicios{
+    margin: 0;
     transition: all .3s ease;
-    margin-top: 1.5em;
   }
 
   .serviciosLista{
     justify-content: center;}
+
+
     
+    .separador{
+      display: none;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:1146px){
+
+  .textoDescuento{
+    width: 40vw;
+  }
+
+  .informacionContenido{
+    gap:40px;
+  }
+
 }
 
 @media (max-width:768px){
@@ -929,15 +965,6 @@ width: 100%;
   text-align: center;
 }
 
-.divisorSecciones{
-  height: 10vh;
-}
-
-#tituloServicios{
-  transition: all .3s ease;
-  margin-top: 1em;
-  font-size: 1.3rem;
-}
 
 .contenidoFooter{
   flex-direction: column;
@@ -979,22 +1006,21 @@ width: 100%;
     transform: scale(.85);
   }
 
-
   #tituloServicios{
-    transition: all .3s ease;
-    margin-top: .6em;
-    font-size: 1.1rem;
-  }
+font-size: 1.5rem;  }
+
 
   .serviciosLista{
     transform: scale(.8);
     padding: 0 2%;
   }
 
-  .footer{
-    padding: 0 1%;
+  .footerPagos{
+    margin-right: 5%;
   }
 
-
+  .textoCopyright{
+    padding: 0 1%;
+  }
 
 }
