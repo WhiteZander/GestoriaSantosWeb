@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
     background-color: rgb(250, 250, 250);
     height: 100%;
+    width: 100%;
 }
 
 .btn-wsp{
@@ -45,17 +46,22 @@ body{
 }
 
 main{
+  box-sizing: border-box;
   background-color: rgb(250, 250, 250);
+  width: 100%;
 }
 
 .header{
+  box-sizing: border-box;
    background-color: white;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    height: auto; 
+    height: 110px; 
     position: fixed;
+    transition: all .3s ease
+    
 }
 
 
@@ -63,11 +69,23 @@ main{
 .menu{
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
+    transition: all .3s ease
+
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30vw;
+  width: auto;
+  transition: all .3s ease
+
 }
 
 .header.shrink .menu{
   box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+  transition: all .3s ease
+
 }
 
 
@@ -76,6 +94,12 @@ main{
     height: 90px;
     margin: 5% 15% 5% 0;
     transition: height .3s ease
+}
+
+.header.shrink {
+  height: auto;
+  transition: all .3s ease
+
 }
 
 .header.shrink .logo {
@@ -89,6 +113,13 @@ main{
     display: flex;
     gap: 1rem;
     padding: 0 0 0 15%;
+    transition: all .3s ease
+
+}
+
+.centrarMenuResponsive{
+  display: flex;
+  gap: 1rem;
 }
 
 .header.shrink.menuNavegacion {
@@ -110,6 +141,7 @@ padding: auto;
     color: #444444;
     transition-duration: .3s;
 }
+
 
 .menuLink:hover{
     color: #4c89b9;
@@ -179,6 +211,19 @@ padding: auto;
         color: #4c89b9;;
         transition-duration: .5s;
         background-color: white;
+    }
+
+    .burger{
+      flex-direction: column;
+      cursor: pointer;
+      display: none;
+    }
+    
+    .line{
+      width: 30px;
+      height: 3px;
+      background-color: #444444;
+      margin: 3px 0;
     }
 
 .header-spacer{
@@ -312,7 +357,7 @@ padding: auto;
 .infoDescuento{
     position: relative;
     width: auto;
-    height: 60vh;
+    height: auto;
     background: rgb(11,113,195);
   /*background: linear-gradient(0deg, rgba(11,113,195,1) 30%, rgba(34,126,201,1) 36%, rgba(57,139,207,1) 42%, rgba(87,157,214,1) 50%, rgba(129,181,224,1) 61%, rgba(163,201,232,1) 70%, rgba(186,214,238,1) 76%, rgba(201,223,242,1) 80%, rgba(246,250,253,1) 92%, rgba(255,255,255,1) 100%);*/
   display: flex;
@@ -325,6 +370,7 @@ padding: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 3%;
   
 }
 
@@ -453,12 +499,13 @@ strong{
 
 .sobreEmpresaLp{
   width: auto;
-  height: 80vh;
+  height: auto;
   background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
+  padding: 4%;
 }
 
 .imagenTrabajando{
@@ -501,7 +548,6 @@ margin-bottom: 30px;
   font-size: 1.2rem;
   font-weight: 100;
   margin-bottom: 30px;
-
 }
 
 
@@ -552,13 +598,14 @@ background-color: rgb(250, 250, 250);
 }
 
 #tituloServicios{
-  margin-top: 3em;
-  z-index: 1;
+  margin-top: 2.8em;
   text-decoration: underline;
   text-underline-offset: .3em;
+  transition: all .3s;
 }
 
 .serviciosContenedor{
+  position: relative;
   height: auto;
   width: 100%;
   background-color: rgb(250, 250, 250);
@@ -568,7 +615,7 @@ background-color: rgb(250, 250, 250);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 20px 50px 20px;
+  padding: 5% 2% 5% 2%;
   gap: 30px;
 }
 
@@ -628,12 +675,14 @@ a{
 
 
 .footer{
+  box-sizing: border-box;
   height: auto;
   background: rgb(11,113,195);
-    width: auto;
+  width: 100%;
 }
 
 .contenidoFooter{
+  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -653,7 +702,7 @@ a{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 800px;
+  width: 100%;
 }
 
 .descripcionFooter{
@@ -698,6 +747,7 @@ a{
 
 #textoDescripcionFooterAnticipo{
   text-decoration: underline;
+  text-align: center;
 }
 
 .footerPagos{
@@ -734,11 +784,16 @@ margin-bottom: 30px;
 
 border-radius: 50px;
 box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+margin-right: 5%;
 
 }
 
+#ubicacionMapaMobile{
+  display: none;
+}
+
 .copyrightField{
-  height: 3.5rem;
+  height: auto;
   background-color: rgb(145, 143, 143);
   width: auto;
   display: flex;
@@ -751,12 +806,195 @@ font-family: "Roboto", sans-serif;
 color: white; 
 font-size: 1rem;
 font-weight: 100;
-padding-top: 1.2rem;
+padding: 2rem 0 2rem 0;
 }
 
 .linkCopyright{
   text-decoration: none;
   color: white; 
   font-weight: 300;
+
+}
+
+
+/* Responsive */
+
+@media (max-width:1085px){
+
+  #tituloServicios{
+    transition: all .3s ease;
+    margin-top: 1.5em;
+  }
+
+  .serviciosLista{
+    justify-content: center;}
+    
+}
+
+@media (max-width:768px){
+
+.header{
+transition: all .3s ease;
+width: 100%;
+}
+
+.navContainer{
+  position: relative;
+  width: 100%;
+}
+
+.burger{
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  transition: all .3s ease;
+
+}
+
+.menuNavegacion{
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #FFF;
+  padding: 10px 0;
+  display: none;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  transition: all .5s;
+
+}
+
+.menuNavegacion.active{
+  transition: all .5s;
+  display: flex;
+
+}
+
+.centrarMenuResponsive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+  text-align: center;
+}
+
+.listaServicios > a.menuLink::after{
+  display: none;
+}
+
+.menuLinkServiciosDropdown{
+  display: none;
+}
+
+.header.shrink .logo {
+  height: 78px;  
+  margin: 0;
+  transition: height .3s ease
+
+}
+
+.header.shrink .burger{
+  padding-top: 28px;
+  transition: all .3s ease
+}
+
+.waves{
+  display: none;
+}
+
+.contenidoInfoDescuento{
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+  padding: 6% 0 6% 0;
+}
+
+.textoDescuento{
+  width: 60vw;
+}
+
+.sobreEmpresaLp{
+  display: flex;
+  flex-direction: column;
+  padding: 6% 0 6% 0;
+
+}
+
+.contenidoSobreEmpresaLp{
+  padding-top: 5%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.divisorSecciones{
+  height: 10vh;
+}
+
+#tituloServicios{
+  transition: all .3s ease;
+  margin-top: 1em;
+  font-size: 1.3rem;
+}
+
+.contenidoFooter{
+  flex-direction: column;
+}
+
+.informacionContenido{
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+.descripcionFooter{
+  align-items: center;
+  text-align: center;
+
+}
+
+.ubicacionMapa{
+  display: none;
+}
+
+#ubicacionMapaMobile{
+  display: inline;
+  margin-bottom: 5vh;
+  margin-right: 0;
+}
+
+.textoCopyright{
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+}
+
+@media (max-width:500px){
+
+
+  .heroTituloSubtitulo{
+    transform: scale(.85);
+  }
+
+
+  #tituloServicios{
+    transition: all .3s ease;
+    margin-top: .6em;
+    font-size: 1.1rem;
+  }
+
+  .serviciosLista{
+    transform: scale(.8);
+    padding: 0 2%;
+  }
+
+  .footer{
+    padding: 0 1%;
+  }
+
+
 
 }

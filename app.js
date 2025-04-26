@@ -8,3 +8,13 @@ window.addEventListener('scroll', function() {
       header.classList.remove('shrink');
   }
   });
+
+  const burger = document.querySelector(".burger");
+
+  const menuNavegacion = document.querySelector(".menuNavegacion");
+
+
+  burger.addEventListener("click",()=>{
+    menuNavegacion.classList.toggle("active");
+  })
+
