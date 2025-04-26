@@ -969,6 +969,10 @@ width: 100%;
   text-align: center;
 }
 
+.infoTextoSobreEmpresa{
+  text-align: justify;
+}
+
 
 .contenidoFooter{
   flex-direction: column;
