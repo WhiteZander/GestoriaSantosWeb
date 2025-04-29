@@ -739,6 +739,7 @@ a{
   font-weight: 300;
   line-height: 25px;
   padding-left: 10px;
+  text-decoration: none;
 }
 
 #textoDescripcionFooter1{
@@ -849,9 +850,9 @@ padding: 0 1%;
 
 
     
-    .separador{
+  .separador{
       display: none;
-    }
+  }
     
 }
 
@@ -1016,12 +1017,23 @@ width: 100%;
   }
 
   #tituloServicios{
-font-size: 1.5rem;  }
-
+font-size: 1.5rem; 
+  }
 
   .serviciosLista{
     transform: scale(.8);
     padding: 0 2%;
+  }
+
+  #serviciosFirstChild{
+
+    margin-top: -15vh;
+  
+  }
+
+  #serviciosLastChild{
+    margin-bottom: -15vh;
+
   }
 
   .footerPagos{

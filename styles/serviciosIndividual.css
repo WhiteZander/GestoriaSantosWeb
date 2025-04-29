@@ -141,6 +141,14 @@
     text-align: left;
 }
 
+#requisitoListaSubPlus{
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: .9em;
+    text-align: left;
+    color: rgb(73, 73, 73);
+}
+
 
 .masInformacion{
     padding: 5% 0;

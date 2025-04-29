@@ -65,18 +65,18 @@
             </div>
             <div class="contactoFormularioContainer">
                 <div class="contactoFormulario">
-                    <form>
+                    <form  action="https://formspree.io/f/mrbqebyd" method="POST">
                             <label for="nombreapellido">Nombre</label>
-                            <input type="text" id="nombreapellido" class="input-padron" required>
+                            <input type="text" id="nombreapellido" name="nombreapellido" class="input-padron" required>
             
                             <label for="email">Email</label>
-                            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+                            <input type="email" id="email" name="email" class="input-padron" required placeholder="email@dominio.com">
             
                             <label for="whatsapp">WhatsApp</label>
-                            <input type="tel" id="whatsapp" class="input-padron" pattern="[0-9]{10,12}" required placeholder="(XX) XXXX XXXX">
+                            <input type="tel" id="whatsapp" name="whatsapp" class="input-padron" pattern="[0-9]{10,12}" required placeholder="(XX) XXXX XXXX">
             
                             <label for="mensaje">Mensaje</label>
-                            <textarea cols="16" rows="3" id="mensaje" class="input-padron" required></textarea>
+                            <textarea cols="16" rows="3" id="mensaje" name="mensaje" class="input-padron" required></textarea>
 
                             <input type="submit" value="Enviar formulario" class="enviar">
                     </form>
@@ -90,12 +90,12 @@
 
             <div class="iconosRedes">
 
-                <img src="assets/facebookContacto.png" class="iconoRedesContacto" alt="Icono Facebook" href="">
-                <img src="assets/instagramContacto.png" class="iconoRedesContacto" alt="Icono Instagram" href="">
+                <a href="https://www.facebook.com/profile.php?id=61574843736715&mibextid=wwXIfr&mibextid=wwXIfr"><img src="assets/facebookContacto.png" class="iconoRedesContacto" alt="Icono Facebook" ></a>
+               <a href="https://www.instagram.com/santosgestoriaautomotriz?igsh=Zmp0cXM0MHlyeG9x"><img src="assets/instagramContacto.png" class="iconoRedesContacto" alt="Icono Instagram" ></a>
             </div>
         </div>
     </main>
-    
+     
     <footer class="footer">
       <div class="contenidoFooter">
         <div class="informacionFooter">                    
@@ -148,8 +148,8 @@
               <h2 class="textoRedes">Síguenos en:</h2>
 
               <div>
-                <img src="assets/facebookIcon.svg" class="rssIcon" alt="Facebook logo">
-                <img src="assets/instagramIcon.svg" class="rssIcon" alt="Instagram logo">
+                <a href="https://www.facebook.com/profile.php?id=61574843736715&mibextid=wwXIfr&mibextid=wwXIfr"><img src="assets/facebookIcon.svg" class="rssIcon" alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/santosgestoriaautomotriz/#"><img src="assets/instagramIcon.svg" class="rssIcon" alt="Instagram logo"></a>
               </div>
               
           </div>
@@ -162,6 +162,7 @@
         <p class="textoCopyright"> <strong>Copyright</strong> © 2025 Santos Gestoría | <a href="avisoPrivacidad.html" class="linkCopyright">Aviso de Privacidad</a> | Usted está sujeto a la <a href="https://policies.google.com/privacy" class="linkCopyright">Política de Privacidad</a> y los <a href="https://policies.google.com/terms" class="linkCopyright">Términos del Servicio de Google</a>.</p>
       </div>
 </footer>
+
   <script src="app.js" defer></script>
 </body>
 </html>
