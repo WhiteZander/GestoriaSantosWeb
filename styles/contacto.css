@@ -246,7 +246,7 @@ transition-duration: 1s;
 
 }
 
-@media (max-width:350px){
+@media (max-width:500px){
     .iconosRedes{
         display: flex;
         flex-direction: column;
